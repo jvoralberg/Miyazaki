@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap'); /* import font */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body  {
+        font-family: "Poppins", Arial, serif;
+        font-weight: 200;
+        font-style: normal;
+        color: #fff;
+        font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #7B68EE;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper { /* bg */
+    background: rgba(0.5, 0, 0, 1);
+    width: 100%;
+}
+
+.container { /* make width of all stuff */
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+header { /* make space header */
+    padding: 50px 0;
+}
+
+header .logo,
+footer .blocks .logo
+{ /* make style logo */
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+}
+
+header nav { /* move right and make width */
+    float: right;
+    width: 50%
+}
+
+header nav ul { /* delete list style, all elements with space between */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li { /* make some stuff in header only if its block */
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.active) a:hover { /* not use effect glow when we already use */
+
+    border-bottom: 3px solid #fff;
+}
+
+header nav ul li.active::after { /* show whats page is open */
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
+    position: relative;
+    top: 5px;
+    left: -15px;
+
+}
+
+.hero {  /* make space in first container */
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.hero--info { /* width first text */
+    width: 530px;
+    padding-top: 50px;
+}
+
+.hero--info h2 { 
+    color: #7B68EE;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.hero img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    scale: 100%;
+}
+
+/* Filmi */
+
+.filmi {
+    padding-top: 300px;
+}
+.filmi h3 {
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+.filmi .see-all {
+    color: #fff;
+    background: #09203F;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.filmi .see-all:hover {
+    transform: scale(1.1);
+}
+
+.filmi .Film {
+    display: flex;
+    justify-content: space-between;
+    
+   
+
+
+    
+}
+
+.filmi img { /* scale */
+    scale: 0.7;
+    margin-top: 10px;
+    padding: 0 0px;
+
+
+}
+
+.filmi .Film span {
+    display: block;
+    text-align: center;
+    margin-top: -50px;
+}
+
+/* Footer */
+
+footer {
+    background: #000;
+    padding: 50px;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+footer .blocks p {
+    width: 400px;
+    margin: 0px;
+    font-size: 15px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    display: flex;
+}
+footer .blocks a {
+    font-size: 20px;
+     padding-top: 50px;
+    display: flex;
+    font-weight: 500;
+}
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer>p {
+text-align: center;
+}
